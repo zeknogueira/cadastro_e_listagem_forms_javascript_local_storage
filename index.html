@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exemplo de cadastro</title>
+</head>
+<body page="lista">
+    <header>
+
+    </header>
+    <main>
+        <div id="lista-registro">
+            <table>
+                <thead> <!-- Deixa a primeira linha pré-configurada -->
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <button onclick="visualizar('cadastro')">Novo Cadastro</button>
+        </div>
+        <div id="cadastro-registro">
+            <div>
+                <div class="label">
+                    <div>ID</div>
+                    <div>
+                        <input type="number" name="txtid" id="codigo" placeholder="Digite o código" readonly>
+                    </div>
+                </div>
+                <div class="label">
+                    <div>NOME</div>
+                    <div>
+                        <input type="text" name="txtnome" id="nome" placeholder="Digite o nome">
+                    </div>
+                </div>
+                <div class="label">
+                    <div>TELEFONE</div>
+                    <div>
+                        <input type="text" name="txttelefone" id="telefone" placeholder="Digite o telefone">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button>Salvar</button>
+                <button onclick="visualizar('lista')" class="cinza">Cancelar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
+<script src="script.js"></script>
